@@ -91,7 +91,7 @@ public class VillagerIdCommand implements CommandExecutor {
 			sender.sendMessage("§a[TOTAL OF "+profession+"]§r: " + total);
 		});
 		
-		sender.sendMessage("§a[TOTAL DE GOLENS]§r: " + totalGolens);
+		sender.sendMessage("§a[TOTAL OF GOLENS]§r: " + totalGolens);
 
 		return true;
 	}
