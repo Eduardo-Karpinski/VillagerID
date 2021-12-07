@@ -1,0 +1,8 @@
+name: VillagerID
+main: br.com.villagerid.Commands
+version: 3.0.2
+api-version: 1.17
+commands:
+	getVillage:
+    	description: get data from a nearby village
+		usage: /getVillage
