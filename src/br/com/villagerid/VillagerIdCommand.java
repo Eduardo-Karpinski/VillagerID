@@ -73,7 +73,7 @@ public class VillagerIdCommand implements CommandExecutor {
 					professions.put(Profession.NONE, professions.getOrDefault(Profession.NONE, 0) + 1);
 					break;
 				default:
-					Bukkit.getServer().getConsoleSender().sendMessage("Profession " + villager.getProfession() + " não consta no case");
+					Bukkit.getServer().getConsoleSender().sendMessage("ERRO: " + villager.getProfession() + " off switch");
 					break;
 				}
 				break;
