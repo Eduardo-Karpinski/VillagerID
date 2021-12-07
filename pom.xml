@@ -7,12 +7,16 @@
 	<version>1.0.0</version>
 	<name>VillagerID</name>
 	<description>Plugin of java to identification of villagers</description>
-	<repositories>
-		<repository>
-			<id>spigot-repo</id>
-			<url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
-		</repository>
-	</repositories>
+	<url>https://github.com/Eduardo-Karpinski/VillagerID</url>
+	<inceptionYear>2021</inceptionYear>
+	<developers>
+		<developer>
+			<id>Eduardo-Karpinski</id>
+			<name>Eduardo William Karpinski Priester</name>
+			<email>karpinskipriester@gmail.com</email>
+			<url>https://github.com/Eduardo-Karpinski</url>
+		</developer>
+	</developers>
 	<dependencies>
 		<dependency>
 			<groupId>org.spigotmc</groupId>
@@ -20,6 +24,12 @@
 			<version>1.18-R0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
+	<repositories>
+		<repository>
+			<id>spigot-repo</id>
+			<url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+		</repository>
+	</repositories>
 	<build>
 		<sourceDirectory>src</sourceDirectory>
 		<plugins>
