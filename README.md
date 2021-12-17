@@ -1,2 +1,2 @@
 # VillagerID
- Plugin of java to identification of villagers
+ Plugin of minecraft for identification of villagers
