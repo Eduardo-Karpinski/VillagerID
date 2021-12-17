@@ -84,16 +84,34 @@ public class VillagerIdCommand implements CommandExecutor {
 				break;
 			}
 		}
-
-		sender.sendMessage("§a[TOTAL OF VILLAGERS]§r: " + professions.values().stream().reduce(0, Integer::sum));
+		
+		Integer totalOfVillagers = professions.values().stream().reduce(0, Integer::sum);
+		
+		sender.sendMessage("§a[TOTAL OF VILLAGERS]§r: " + totalOfVillagers);
 		
 		professions.forEach((profession, total) -> {
-			sender.sendMessage("§a[TOTAL OF "+profession+"]§r: " + total);
+			sender.sendMessage(" * §a"+profession+"§r: " + total);
+			
+			// not yet implemented 
+			
+//			TextComponent message = new TextComponent(" * "+profession+": " + total);
+//			message.setColor(ChatColor.GREEN);
+//			message.setBold(true);
+//			List<Text> texts = new ArrayList<>();
+//			texts.add(new Text("I: " + 0));
+//			texts.add(new Text("II: " + 0));
+//			texts.add(new Text("III: " + 0));
+//			texts.add(new Text("IV: " + 0));
+//			texts.add(new Text("V: " + 0));
+//			message.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, texts.toArray(Text[]::new)));
+//			player.spigot().sendMessage(message);
+			
 		});
 		
 		sender.sendMessage("§a[TOTAL OF GOLENS]§r: " + totalGolens);
-
+		sender.sendMessage("§a[UNEMPLOYMENT RATE]§r: " + professions.getOrDefault(Profession.NONE, 0) * 100 / totalOfVillagers+"%");
+		
 		return true;
 	}
-
+	
 }
